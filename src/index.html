@@ -3,12 +3,92 @@
   <head>
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
+    <script src="https://kit.fontawesome.com/da6daf1276.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
+
   </head>
   <body>
-    <div id="root">
-      <h1>Hello world!</h1>
-    </div>
+
+    <main class="contenedor">
+
+      <div class="titulo">
+      <h1> Cifrador Secreto </h1> 
+          
+      </div>
+
+      <div class="bienvenida">  
+        <div class="bienvenidason">
+        <h2>¡Bienvenida a tu Cifrador Secreto!</h2>   
+        <p>Cifra tus mensajes secretos y compartelos con alguien especial. <i class="fa-solid fa-heart"></i> <br> 
+          Escribe un mensaje y escoge tu número clave. <i class="fa-solid fa-key"></i> <br>
+          
+          
+        
+       </p>
+      </div>
+      </div>
+
+      
+
+      <div class="gridconteiner">
+        <div class="griditem"> 
+          
+            <h2> Mensaje <i class="fa-solid fa-lock fa"></i></h2>
+            <form id="cifrador">
+                <textarea name="mensaje" id="mensaje"  placeholder="Ingresa tu Mensaje" onkeyup="javascript:this.value=this.value.toUpperCase()" cols="23" rows="10"></textarea>
+                <br>
+                <label for="clave"> Ingresa tu número clave:</label> <br> 
+                 <i class="fa-solid fa-key"></i> <input id="offset" type="number" min="0" placeholder="Clave"><br>
+                 <br>
+                
+                
+                
+            </form>
+          
+
+        </div>
+
+        <div class="griditem" >
+                         <br>
+            <button id="cifrar">Cifra tu mensaje</button>
+            
+               <textarea id="textocodificado" class="mostrar"></textarea> 
+            
+          <br>
+         
+           <button id="decifrar">Descifra tu mensaje</button>
+          
+           
+            <textarea id="textooriginal" class="mostrar"></textarea>
+         
+          <br>
+          <form id="reiniciarCifrador">
+            <button id="reiniciar"> Reiniciar </button>
+                                   
+          </form>
+        </div>
+        
+      </div>
+       <footer>
+        <div class="bienvenidason">
+       <h3> Envia tus mensajes secretos  </h3>
+        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram fa-3x"></i></a> 
+        <a href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-square-whatsapp fa-3x"></i></a>
+        <a href="https://www.gmail.com/" target="_blank"><i class="fa-solid fa-envelope fa-3x"></i></a>
+        <a href="https://www.gmail.com/" target="_blank"><i class="fa-brands fa-facebook fa-3x"></i> </a>
+      </div> 
+      </footer>
+    </main>
+
     <script src="index.js" type="module"></script>
+    
   </body>
-</html>
+  </html>
+
+
+ 
+ 
+
